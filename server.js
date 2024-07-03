@@ -79,7 +79,7 @@ app.get("/signup", async (req, res) => {
 
 
 // Define the GET route
-app.get('/SignUpData/:id', async (req, res) => {
+app.get('/signup/:id', async (req, res) => {
     const { id } = req.params;
     console.log(id);
 
