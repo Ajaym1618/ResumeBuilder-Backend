@@ -168,7 +168,7 @@ app.put('/SignUpData/education/:id', async (req, res) => {
 
 
 //for project
-app.put('/SignUpData/project/:id', async (req, res) => {
+app.put('/signup/project/:id', async (req, res) => {
     const { id } = req.params;
     const projects = req.body.projects;
 
