@@ -23,7 +23,7 @@ db.once("open", () => {
 
 //posting signUp data
 
-app.post("/signup", async (req, res) => {
+app.post("/SignUpData", async (req, res) => {
   const { email, password } = req.body;
 
   try {
@@ -66,7 +66,7 @@ app.post('/LoginData', async (req, res) => {
 
 // //Getting data for login
 
-app.get("/signup", async (req, res) => {
+app.get("/SignUpData", async (req, res) => {
   try {
     const users = await SignUp.find({});
     console.log("Fetched Users:", users);
@@ -79,7 +79,7 @@ app.get("/signup", async (req, res) => {
 
 
 // Define the GET route
-app.get('/signup/:id', async (req, res) => {
+app.get('/SignUpData/:id', async (req, res) => {
     const { id } = req.params;
     console.log(id);
 
@@ -168,7 +168,7 @@ app.put('/SignUpData/education/:id', async (req, res) => {
 
 
 //for project
-app.put('/signup/project/:id', async (req, res) => {
+app.put('/SignUpData/project/:id', async (req, res) => {
     const { id } = req.params;
     const projects = req.body.projects;
 
